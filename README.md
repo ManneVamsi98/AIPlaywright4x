@@ -17,6 +17,7 @@ AIPlaywright4x/
 │   ├── 03_Anti_Hallucinations.md
 │   ├── 04_RICE_POT_Generic_QA_Template.md
 │   ├── Test Plan using RICEPOT template.md
+│   ├── Test Plan Prompt using RICEPOT template.md
 │   ├── LLM_Basics/
 │   │   ├── AI_Glossary_Keywords.md
 │   │   ├── AI_Glossary_Infographic.png / .svg
@@ -51,7 +52,8 @@ The RICE POT framework (**R**ole, **I**nstructions, **C**ontext, **E**xample, **
 | `02_Problem_Statement.md` | The problem statement driving the automation deliverable. |
 | `03_Anti_Hallucinations.md` | Anti-hallucination techniques for prompt engineering (version anchoring, negative constraints, grounding, self-verification). |
 | `04_RICE_POT_Generic_QA_Template.md` | Copy-ready master RICE POT prompt with four task profiles (General QA, Test plan, Test cases, Automation) and a final review checklist. |
-| `Test Plan using RICEPOT template.md` | A VWO test plan generated with the template's **Profile B (Test plan)**: the filled RICE POT prompt (Part A) plus the 12-section test plan with 35 traced coverage items (Part B). |
+| `Test Plan using RICEPOT template.md` | VWO test plan generated with the RICE POT template: 12 sections with 35 traced coverage items. |
+| `Test Plan Prompt using RICEPOT template.md` | The filled RICE POT prompt that generates the VWO test plan. |
 | `Selenium_Framework/selenium/` | A Maven + TestNG Selenium 4 framework (Java 17) for Salesforce login: Page Object Model with PageFactory and XPath, `WebDriverWait` only (no `Thread.sleep`), and credentials supplied via `SALESFORCE_USERNAME` / `SALESFORCE_PASSWORD` environment variables. |
 
 ---
@@ -87,4 +89,4 @@ Deliverables follow the `Anti-Hallucination_Rules.md`:
 
 - **Scope:** experimentation (A/B, Split URL, Multivariate), SmartStats, visual/code editors, heatmaps & session recordings, audience targeting, real-time reporting, personalization, integrations, collaboration.
 - **Non-functional:** performance (≤ 2 s editing), security (2FA / RBAC / activity logs), scalability, data privacy (GDPR / CCPA), reliability (99.9% uptime SLA).
-- **Two plans:** `VWO_Test_Plan.md` (Anti-Hallucination block format, 25 test cases) and `Test Plan using RICEPOT template.md` (RICEPOT Profile B, 35 planned coverage items).
+- **Two plans:** `VWO_Test_Plan.md` (Anti-Hallucination block format, 25 test cases) and `Test Plan using RICEPOT template.md` (RICE POT, 35 planned coverage items).
