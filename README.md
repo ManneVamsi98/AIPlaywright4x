@@ -1,8 +1,8 @@
 # AIPlaywright4x
 
-Learning and deliverable repository for **AI / LLM fundamentals** and **AI-assisted QA & test engineering**.
+Learning and deliverable repository for **AI / LLM fundamentals**, **JavaScript basics**, and **AI-assisted QA & test engineering**.
 
-Content is organised by chapter. Chapter 00 combines **prompt engineering** (the RICE POT framework and a worked QA test plan) with **LLM basics**, and applies a strict, source-traceable documentation standard.
+Content is organised by chapter. Chapter 00 combines **prompt engineering** (the RICE POT framework and a worked QA test plan) with **LLM basics**, and applies a strict, source-traceable documentation standard. Chapters 01 and 02 cover **JavaScript foundations** needed for Playwright test automation.
 
 ---
 
@@ -36,6 +36,19 @@ AIPlaywright4x/
 │               ├── base/BaseTest.java
 │               ├── pages/LoginPage.java
 │               └── tests/{ValidLoginTest,InvalidLoginTest}.java
+├── Chapter_01_JS_Basics/
+│   ├── 01_Hellowworld.js
+│   ├── 02_Math.js
+│   └── 03_DOM_Basics.md
+├── Chapter_02_JS_Keaywrods_Identifiers/
+│   ├── 01_Keywords_and_Identifiers.md
+│   ├── 02_js_engine.js
+│   ├── 03_letengine.js
+│   ├── 04_KW_IND.js
+│   ├── 05_KW_IND_Rules.js
+│   ├── 06_IND_Rules2.js
+│   ├── 07_Comments.js
+│   └── 08_IQ.js
 └── README.md
 ```
 
@@ -71,6 +84,35 @@ The RICE POT framework (**R**ole, **I**nstructions, **C**ontext, **E**xample, **
 | `VWO_Test_Plan.md` | Test plan for the VWO platform at `https://app.vwo.com/`, derived from the PRD with full requirement traceability. |
 | `VWO_Test_Plan_Extracted_PRD.txt` | Plain-text extraction of the PRD, used as the traceability source for the test plans. |
 | `Product Requirements Document (PRD) VWO.com.pdf` | Source PRD for VWO.com. |
+
+---
+
+## Chapter 01 — JavaScript Basics (`Chapter_01_JS_Basics/`)
+
+First steps in JavaScript, written with a QA/Playwright mindset.
+
+| File | Description |
+| --- | --- |
+| `01_Hellowworld.js` | The classic `console.log("Hello, World!")` first program. |
+| `02_Math.js` | Basic arithmetic operators: `+`, `*`, `/`, and exponentiation `**`. |
+| `03_DOM_Basics.md` | Plain-language explanation of the DOM (house analogy, node tree, `find → change → react`), event propagation, and why it matters for Playwright locators. |
+
+---
+
+## Chapter 02 — JavaScript Keywords & Identifiers (`Chapter_02_JS_Keaywrods_Identifiers/`)
+
+Naming rules, keywords, and code conventions in JavaScript.
+
+| File | Description |
+| --- | --- |
+| `01_Keywords_and_Identifiers.md` | Keywords vs identifiers, the 5 identifier rules, valid/invalid examples, case sensitivity, and the full reserved-word list. |
+| `02_js_engine.js` | `let` declaration and a commented "hot code" example to explain how the engine runs loops. |
+| `03_letengine.js` | Minimal `let` declaration. |
+| `04_KW_IND.js` | `var` vs `let` vs `const` with a practical QA usage split (`let` 96%, `const` 3%, `var` 1%). |
+| `05_KW_IND_Rules.js` | Identifier rules with valid/invalid examples: `_`, `$`, digits, and case sensitivity. |
+| `06_IND_Rules2.js` | Naming conventions: camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, and Hungarian notation. |
+| `07_Comments.js` | Single-line, multi-line, and JSDoc-style comments. |
+| `08_IQ.js` | Identifier "IQ" quiz: valid vs invalid names, Unicode identifiers, and all four naming cases with constants. |
 
 ---
 
